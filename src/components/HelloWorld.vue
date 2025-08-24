@@ -8,7 +8,7 @@ const quote = ref(null)
 async function loadQuotes() {
   const response = await fetch(new URL('../assets/quotes.json', import.meta.url))
   const data = await response.json()
-  people.value = Array.isArray(data) ? data : []
+  people.value = Array.isArray(data.people) ? data.people : []
 }
 
 function getRandomJoke() {
