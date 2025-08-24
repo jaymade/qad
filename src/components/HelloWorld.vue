@@ -8,15 +8,15 @@ const quote = ref(null)
 async function loadQuotes() {
   const response = await fetch(new URL('../assets/quotes.json', import.meta.url))
   const data = await response.json()
-  people.value = Array.isArray(data.people) ? data.people : []
+  people.value = Array.isArray(data) ? data : []
 }
 
 function getRandomJoke() {
   if (people.value.length > 0) {
-    // Pick a random person
+    // Pick a random person/category
     const personIdx = Math.floor(Math.random() * people.value.length)
     person.value = people.value[personIdx]
-    // Pick a random quote from that person
+    // Pick a random quote from that person/category
     if (person.value.quotes && person.value.quotes.length > 0) {
       const quoteIdx = Math.floor(Math.random() * person.value.quotes.length)
       quote.value = person.value.quotes[quoteIdx]
