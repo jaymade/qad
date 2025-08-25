@@ -1,0 +1,110 @@
+/* Base styles */
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.person-toggles {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.toggle-btn {
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 20px;
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-size: 1rem;
+}
+
+.toggle-btn.active,
+.toggle-btn:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.person-img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  object-fit: contain;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 50%;
+  background: #222;
+}
+
+.quote {
+  margin: 2rem 0;
+  font-size: 1.3rem;
+  font-style: italic;
+  word-break: break-word;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  background: #444;
+  color: #fff;
+  margin: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 95vw;
+    padding: 1rem;
+  }
+  .person-img {
+    max-width: 160px;
+  }
+  .quote {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+    border-radius: 0;
+  }
+  .person-img {
+    max-width: 100px;
+  }
+  .quote {
+    font-size: 1rem;
+  }
+  .toggle-btn {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.7rem;
+  }
+}

@@ -1,5 +1,34 @@
 [
   {
+    "name": "Frank Sinatra",
+    "quotes": [
+      {
+        "text": "The best revenge is massive success."
+      },
+      {
+        "text": "I'm gonna make him an offer he can't refuse."
+      },
+      {
+        "text": "You only live once, and the way I live, once is enough."
+      },
+      {
+        "text": "Alcohol may be man's worst enemy, but the bible says love your enemy."
+      },
+      {
+        "text": "You may be a puzzle, but I like the way the parts fit."
+      },
+      {
+        "text": "I'm gonna live till I die."
+      },
+      {
+        "text": "Basically, I'm for anything that gets you through the night - be it prayer, tranquilizers or a bottle of Jack Daniels."
+      },
+      {
+        "text": "I'm gonna live till I die."
+      }
+    ]
+  },
+  {
     "name": "Dad Jokes",
     "quotes": [
       {
