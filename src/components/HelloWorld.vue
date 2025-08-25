@@ -50,7 +50,7 @@ onMounted(async () => {
 
 <template>
   <div class="container">
-    <h1>Joke a Day</h1>
+    <h1>Quote a Day</h1>
     <div style="margin-bottom: 1rem;">
       <button
         @click="showSelectors = !showSelectors"
@@ -127,6 +127,9 @@ onMounted(async () => {
   margin: 1rem auto;
   display: block;
 }
+h2 {
+  color: orange;
+}
 .quote {
   margin: 2rem 0;
   font-size: 1.3rem;
@@ -136,5 +139,15 @@ button {
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
   cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  background: #444;
+  color: #fff;
+  margin: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+button:hover {
+  background: orange;
+  color: #000;
 }
 </style>
