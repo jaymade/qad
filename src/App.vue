@@ -84,14 +84,28 @@ main :deep(.container) {
 }
 
 .tech-footer {
-  max-width: 600px;
-  width: 100%;
+  width: 600px;
   margin: 0 auto;
   padding: 0.75rem 2rem;
   background: #000;
   border-top: 1px solid #222;
   text-align: center;
   border-radius: 0 0 12px 12px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .tech-footer {
+    width: calc(100% - 4rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-footer {
+    width: 100%;
+    border-radius: 0;
+    padding: 0.75rem 1rem;
+  }
 }
 
 .tech-badges {
